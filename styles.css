@@ -1,0 +1,94 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+h1, p[id='subtitle']{
+    font-family: 'Didact Gothic', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color:white;
+    margin: 0;
+    text-align: center;
+}
+
+img[alt='Odin Logo']{
+    width: 100px;
+}
+
+#title-sec{
+    background-image: url('./assets/vikingbg.png');
+    width: 40vw;
+    height: 100vh;
+    box-sizing: border-box;
+    background-size: cover; 
+    background-clip: border-box;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-sec div:nth-child(1){
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3vh;
+    background-color: rgba(0, 0, 0, 0.418);
+}
+
+#form-sec{
+    color: black;
+    box-sizing: border-box;
+    padding: 4vh;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+#form-sec > div > p:nth-child(1){
+    font-weight: 600;
+    font-size: 2vw;
+}
+
+#form-sec > div > p:last-child{
+    font-weight: bold;
+}
+
+#form-sec > div:nth-child(2){
+    margin-top: 5vh;
+}
+
+#form-sec > div:nth-child(2) h2{
+    margin: 0;
+    margin-bottom: 2vh;
+}
+
+form{
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 6vw;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+form div{
+    display: flex;
+    row-gap: 0.8vh;
+    flex-direction: column;
+    margin-top: 1.2vh;
+    margin-bottom: 1.2vh;
+}
+
+form div input{
+    border: 1px solid rgba(128, 128, 128, 0.486);
+    border-radius: 3px;
+    height: 3vh;
+    padding: 0.5vh;
+}
+
+form div input:focus{
+    background-color: rgba(0, 0, 0, 0.678);
+    color: white;
+    font-weight: bold;
+}
